@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Storage pros">
+        <meta name="keywords" content="affordable storage upgrade">
+        <meta name="author" content="Ryan Jackson">
+        <title>Bobs Burgers | Welcome</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Bobs</span> Burgers</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="current"><a href="register.html">Order</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section id="main">
+            <div class="container">
+                <article id="main-col">
+
+                    <ul id="register">
+
+
+
+                    </ul>
+                </article>
+
+                <MainReg id="AMainReg">
+                    <div class="rForm">
+                        <h3>Create Order</h3>
+                        <form class="PHP/javaScript.js" method= "post" onsubmit = "" action ="http://localhost/TaskITEC/acme/PHP/connect.php">
+
+                            <div class=lineyBoi>
+
+                                <lineUp>Name</lineUp>
+                                <input id="name" name=name type="text" placeholder="Enter Name">
+                            </div>
+
+                            <div class=lineyBoi>
+                                <lineUp>Surname</lineUp>
+                                <input id="Sname" name= Sname type="text" placeholder="Enter Surname">
+
+                            </div>
+
+
+                            <div class=lineyBoi>
+                                <lineUp>Phone Number</lineUp>
+                                <input id="Pnum" name=Pnum type="text" placeholder="Phone Number">
+
+                            </div>
+
+                            <div>
+                                <lineUp>Email</lineUp><br>
+                                <input id="email" name=email type="email" placeholder="Email Address">
+
+                            </div>
+
+
+
+                            <div class=lineyBoi>
+                                <lineUp>Order Number:<br>1:Standard burger (R80)<br>2:Cheese burger (R120)<br>3:Deluxe burger (R150)</lineUp>
+                                <input id="OrderNum " name=OrderNum type="text" placeholder="Order">
+
+                            </div>
+                            <br> <button class="button_1" type="submit"  onclick = "inputV()" name="button1" >Click here to order</button>
+
+
+
+                        </form>
+                    </div>
+                </MainReg>
+            </div>
+        </section>
+
+        <footer>
+            <p>Bobs Burgers &copy; 2019</p>
+        </footer>
+
+        <script type= "text/javascript">
+            var name = document.getElementById("name").value;
+            var Sname = document.getElementById("Sname").value;
+            //var Pnum = document.getElementById("Pnum").value;
+            var email = document.getElementById("email").value;
+            var Password = document.getElementById("Password").value;
+            var CPassword = document.getElementById("CPassword").value;
+        </script>
+        <script type= "text/javascript" src="JavaScript/javaScript.js"></script>
+    </body>
+</html>
